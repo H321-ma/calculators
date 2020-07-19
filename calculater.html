@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator usind javascript</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Scientific calculator</h2>
+		<form id="Calculator">
+			
+			<input type="text" name="display">
+			<br><br>
+			<input type="button" value ="sqrt "onClick="Calculator.display.value+='Math.sqrt('">
+			<input type="button" value ="ln"onClick="Calculator.display.value+='Math.ln('"> 
+			<input type="button" value ="log"onClick="Calculator.display.value+='Math.log('" >
+			<input type="button" value ="tan"onclick="Calculator.display.value+='Math.tan(' ">
+			<input type="button" value ="C"onclick="Calculator.display.value='' ">
+
+			<br><br>
+
+			
+
+			<input type="button" value ="9" onclick="Calculator.display.value+='9'">
+			<input type="button" value ="8" onclick="Calculator.display.value+='8'">
+			<input type="button" value ="7" onclick="Calculator.display.value+='7'">
+			<input type="button" value ="+" onclick="Calculator.display.value+='+'">
+			<input type="button" value="n!" OnClick="Calculator.display.value+='!'" id="factorial"> 
+			<br><br>
+
+			<input type="button" value ="6" onclick="Calculator.display.value+='6'">
+			<input type="button" value ="5" onclick="Calculator.display.value+='5'">
+			<input type="button" value ="4" onclick="Calculator.display.value+='4'">
+			<input type="button" value ="-" onclick="Calculator.display.value+='-'">
+			<input type="button" value ="pi" onclick="Calculator.display.value+='Math.PI'">
+
+			<br><br>
+
+
+			<input type="button" value ="3" onclick="Calculator.display.value+='3'">
+			<input type="button" value ="2" onclick="Calculator.display.value+='2'">
+			<input type="button" value ="1" onclick="Calculator.display.value+='1'">
+			<input type="button" value ="X" onclick="Calculator.display.value+='*'">
+			<input type="button" value ="EXP" onclick="Calculator.display.value+='Math.EXP('">
+
+			<br><br>
+
+			<input type="button" value ="0" onclick="Calculator.display.value+='0'">
+			<input type="button" value ="/" onclick="Calculator.display.value+='/'">
+			<input type="button" value ="%" onclick="Calculator.display.value+='%'">
+			<input type="button" value ="=" onclick="Calculator.display.value =eval(Calculator.display.value)">
+			<input type="button" value ="X" onclick="Calculator.display.value+='*'">
+			
+
+			<br><br>
+
+			<input type="button" value="DELETE" onclick ="Calculator.display.value = Calculator.display.value.substr(0,Calculator.display.value.length-1)">
+			<input type="button" value ="^" onclick="Calculator.display.value+='^'">
+			<input type="button" value ="." onclick="Calculator.display.value+='.'">
+			<input type="button" value ="(" onclick="Calculator.display.value+='('">
+			<input type="button" value =")" onclick="Calculator.display.value+=')'">
+			<br><br>
+
+			<input type="button" value ="sin"onclick="Calculator.display.value+='Math.sin(' ">
+			<input type="button" value ="cos"onclick="Calculator.display.value+='Math.cos(' ">
+			<input type="button" value ="1/x"onclick="Calculator.display.value+='1/x' ">
+			<input type="button" value ="Pol"onclick="Calculator.display.value+='Pol(' ">
+			<input type="button" value ="nCr"onclick="Calculator.display.value+='nCr' ">
+
+
+
+
+		</form>
+
+		<div id="content">
+				<textarea name="notes" class="tekstarea" calc4></textarea>
+				
+           <div class="screen-body-item">
+				<div class="app-form">
+					 <script>
+		function !() { 
+              
+            /* Check if function include ! character then 
+            calculate factorial of number */ 
+            if(Calculator.display.value.includes("!")) { 
+                  
+                size = Calculator.display.value.length; 
+                n = Number(Calculator.display.value.substring(0, size-1)); 
+                factorial = 1; 
+                  
+                for(i = 2; i <= n; i++) 
+                    factorial = factorial*i; 
+                Calculator.display.value = factorial; 
+            } 
+              
+            /* If function include % character then calculate 
+            the % of number */ 
+//            else if(Calculator.display.value.includes("%")) { 
+                  
+  //              size = Calculator.display.value.length; 
+    //            n = Number(Calculator.display.value.substring(0, size-1)); 
+      //          Calculator.display.value = n/100; 
+     //       } 
+  
+       //     else     
+                /* Otherwise evalute and execute output */ 
+       //         Calculator.display.value = eval(Calculator.display.value); 
+        } 
+	</script>
+						
+
+					<div class="app-form-group">
+						<h1>PERCENTAGE <br>
+						         CALCULATOR</h1>
+
+
+						<input type="details" class="app-form-control" placeholder="Enter subject1 marks" id="sub1">
+					<br><br>
+					
+						<input type="details" class="app-form-control" placeholder="Enter subject2 marks" id="sub2">
+					<br><br>
+
+					
+					
+						<input type="details" class="app-form-control" placeholder="Enter subject3 marks" id="sub3">
+					<br><br>
+
+					
+						<input type="details" class="app-form-control" placeholder="Enter subject4 marks" id="sub4">
+					<br><br>
+
+					
+						<input type="details" class="app-form-control" placeholder="Enter subject5 marks" id="sub5">
+						<br><br>
+
+						<input type="button" name="percentage" value="Result" class="app-form-button" onclick="calcy()"> 
+						
+	
+				<div class="app-form-showdata">
+			<p id="showdata"></p>
+		</div>
+	</div>
+</div>
+</div>
+       <script>
+      
+       	    const calcy= () =>{
+       	      var sub1=document.getElementById('sub1').value;
+       	      var sub2=document.getElementById('sub2').value;
+       	      var sub3=document.getElementById('sub3').value;
+       	      var sub4=document.getElementById('sub4').value;
+       	      var sub5=document.getElementById('sub5').value;
+
+       	      
+       	      var total=parseFloat(sub1)+parseFloat(sub2)+parseFloat(sub3)+parseFloat(sub4)+parseFloat(sub5);
+       	      alert("your total marks is"+total);
+
+       	       var perc=total/500*100;
+       	       alert(perc);
+       	       if(perc <=100 && perc>=80){
+       	       	grades='A';
+       	       }else if(perc<=79 && perc>=60){
+       	       	grades='B'
+       	       }
+       	       else if(perc<=59 && perc>=45){
+       	       	grades='c'
+       	       }
+       	       else {
+       	       	grades='F'
+	       	       	}
+
+        
+        document.getElementById('showdata').innerHTML = "out of 500 your total is" + total + "percentage is"+ perc +"your grade is"   +   grades;
+
+
+       	     
+        } 
+
+		
+	</script>
+
+	<div id=outer><h3>EMI Calculator</h3>
+		<div id=cover>
+			<form>
+				<table class=main>
+					<col class=w50>
+					<col class=w50>
+					<tr><td>Loan Amount<td><input id=loan1>
+						<tr><td>Repayment in months<td><input id=months1>
+							<tr><td>Interest Rate<td><input id=rate1 onchange=emi();>
+								<tr><td><button type=reset>Reset</button><td><button type=button onclick='emi()'>Submit</button>
+									<tr><td>EMI<td><input id=pay1><tr><td>Interest payable<td><input id=tintt1><tr><td>Total payable<td><input id=gt1>
+									</table>
+								</form>
+							</div>
+						</div>
+		
+			<script>
+				function emi()
+				{if(document.getElementById('loan1').value==null ||
+				 document.getElementById('loan1').value.length==0 || 
+				 document.getElementById('months1').value==null || 
+				 document.getElementById('months1').value.length==0 || 
+				 document.getElementById('rate1').value==null || 
+				 document.getElementById('rate1').value.length==0 ) 
+				{
+					document.getElementById('pay1').value="Data Reqd.";
+				}
+				else {
+					var pay1='';
+					var princ1= document.getElementById('loan1').value;
+					var term1= document.getElementById('months1').value;
+					var intr1=document.getElementById('rate1').value / 1200;
+					document.getElementById('pay1').value =Math.round(princ1 * intr1 / (1-(Math.pow(1/(1 + intr1), term1)))*100)/100; document.getElementById('gt1').value= Math.round((document.getElementById('pay1').value * document.getElementById('months1').value)*100)/100;document.getElementById('tintt1').value=Math.round((document.getElementById('gt1').value*1 - document.getElementById('loan1').value*1)*100)/100;
+				}
+			}
+// Widget Code by http://widgetcodes.com/
+
+		</script>
+
+</body>
+</html>

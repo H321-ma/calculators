@@ -1,0 +1,149 @@
+form{
+	margin:2px 5px;
+	text-align: center;
+	padding-top: 10%;
+	width:30%;
+	background:#90EE90;
+	box-shadow: 7px 0px 10px rgba(0,0,0,0.6), -7px 0px 10px rgba(0,0,0,0.6);
+	margin:5% 8%;
+	padding-bottom: 5%;
+}
+.app-form .app-form-group{
+	margin:250px 700px;
+	text-align: right;
+	padding-top: 5%;
+	width:50%;
+	box-shadow: 7px 0px 10px rgba(0,0,0,0.6), -7px 0px 10px rgba(0,0,0,0.6);
+	background:#FBEEC1;
+	padding-bottom: 5%;
+	text-decoration: underline;
+
+}
+input[type=details]{
+	box-shadow: 7px 0px 10px rgba(0,0,0,0.6), -7px 0px 10px rgba(0,0,0,0.6);
+	padding-bottom: 1%;
+	font-width:bold;
+	font-size:22px;
+	text-decoration: underline;
+}
+input[type=button name=percentage]{
+ 	width:145px;
+	 
+}
+h1{
+	text-align: left;
+	text-decoration: underline;
+     color:white;
+     text-shadow:-1px 0 black,0 1px black, 1px 0 black,0 -1px black;
+   text-shadow:  2px 2px 4px #000000;
+}
+
+input[type=text]{
+	width:70%;
+	padding:10px;
+	font-size:22px;
+	font-weight:bold;
+	border-radius:5px;
+}
+input[type=button]{
+	width:89px;
+	padding:2px;
+	font-size:18px;
+	font-width:bold;
+	border-radius:7px;
+}
+input[type=button]:hover{
+	color:green;
+    cursor:pointer;
+}
+body{
+	margin:0 auto;
+	padding:0;
+	font-family:sans-serif;
+	background:#f0A91B;
+	background-image: linear-gradient(to right,gray,silver);
+	background:#EAE7DC; 
+	background-image:url(https://images.pexels.com/photos/4386375/pexels-photo-4386375.jpeg?cs=srgb&dl=calculator-placed-over-stack-of-usa-dollars-4386375.jpg&fm=jpg);
+	background-size: cover;
+	background-position:bottom-left;
+}
+h2{
+	text-align:center;
+	margin-right: 10%;
+	background-color: white;
+}
+h3{
+	background-color: white;
+   text-shadow:  2px 2px 4px #000000;
+   text-align: center;
+}
+input[type=button value=delete]{
+	width:100%;
+}
+.tekstarea{
+	position:absolute;
+	top:80px;
+	left:610px;
+	width:200px;
+	height:627px;
+	padding:0 0 0 5px;
+	border:3px groove #ccc;
+	background:#fff;
+	font:normal 9pt/150% monospace;
+	overflow :auto;
+	color:#345678;
+	float:left;
+	box-shadow: 7px 0px 10px rgba(0,0,0,0.6), -7px 0px 10px rgba(0,0,0,0.6);
+    margin-top: 3%;
+}
+.app-form-showdata{
+	text-align:left;
+	font-size:22px;
+	font-weight:bold;
+}
+<style>
+
+#cover{
+	border:2px solid #111;
+	border-radius:7px;
+	box-shadow:inset 0 0 13px #888;
+	padding:7px 0;
+}
+.main{
+	table-layout:fixed;
+	width:94%;border:0;
+	border-collapse:collapse;
+	margin:0 auto;
+}
+.main td{
+	padding:0 8px;
+	vertical-align:middle;
+	text-align:left;
+	border:0;
+	font:500 11px arial;}
+.main input{
+	width:96%;
+	border:1px solid #ccc;
+	margin:2px 0;
+	padding:0 2%;
+	height:17px;
+	text-align:right;
+	font:500 11px arial;
+}
+.main select{
+	width:100%;
+	border:1px solid #ccc;
+	margin:2px 0;
+	background:#fff;
+	height:18px;
+	font:500 11px arial
+}
+.w50{
+	width:50%
+	}
+.main button{
+	width:100%;
+	font:600 12px arial;
+	margin:2px 0;
+	}
+</style>
